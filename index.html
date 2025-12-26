@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Campus Energy Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Smart Campus Energy Management System</h1>
+  <p>AI-Based Energy Monitoring Dashboard</p>
+</header>
+
+<div class="dashboard">
+
+  <div class="card">
+    <h2>Classroom A</h2>
+
+    <div class="device">
+      <span>💡 Light (40W)</span>
+      <button onclick="toggleDevice('light')">Toggle</button>
+    </div>
+
+    <div class="device">
+      <span>🌀 Fan (75W)</span>
+      <button onclick="toggleDevice('fan')">Toggle</button>
+    </div>
+
+    <div class="device">
+      <span>📽 Projector (150W)</span>
+      <button onclick="toggleDevice('projector')">Toggle</button>
+    </div>
+  </div>
+
+  <div class="card status">
+    <h2>Energy Status</h2>
+    <p>Total Energy Usage: <span id="energy">0</span> W</p>
+
+    <div class="bar">
+      <div id="usageBar"></div>
+    </div>
+
+    <p id="aiAlert"></p>
+  </div>
+
+</div>
+
+<script src="ai.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
