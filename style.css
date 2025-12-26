@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eef2f7;
+}
+
+header {
+  background-color: #0f172a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+.device {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+.status p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.bar {
+  background-color: #d1d5db;
+  height: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#usageBar {
+  height: 100%;
+  width: 0%;
+  background-color: #22c55e;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+#aiAlert {
+  margin-top: 10px;
+  font-weight: bold;
+  color: red;
+}
